@@ -61,7 +61,7 @@ class King extends Dispatcher{
         addSlot("calm()", args -> cityCalmed(String.valueOf(args[0])));
     }
     public void alarmRaised(String message){
-        System.out.println("Release The Dragons");
+        System.out.println("Release The Dragons"); //
     }
     public void cityCalmed(String message){
         System.out.println("Lets have a feast");
