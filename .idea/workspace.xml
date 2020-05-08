@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d207644-253b-4ac4-a7d1-a35ac56f90f8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ephraim/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/JDispatcherComponentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JDispatcherComponentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ephraim/JDispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ephraim/JDispatcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestUtility.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,9 +42,14 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Gradle.SignalSlot4J [fatJar]">
-    <configuration name="MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainTest" />
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle clean build" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.JDispatcherImplementationTest">
+    <configuration name="TestUtility" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestUtility" />
       <module name="SignalSlot4J.test" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -87,6 +93,26 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="SignalSlot4J [clean build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="SignalSlot4J [fatJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -108,10 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SignalSlot4J [fatJar]" />
         <item itemvalue="Gradle.JDispatcherImplementationTest" />
         <item itemvalue="Gradle.JDispatcherComponentTest" />
-        <item itemvalue="Application.MainTest" />
+        <item itemvalue="Application.TestUtility" />
+        <item itemvalue="Gradle.SignalSlot4J [clean build]" />
+        <item itemvalue="Gradle.SignalSlot4J [fatJar]" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588912324063</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added GUI dialog removal fix to support github test runner">
+      <created>1588913278231</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588913278231</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -149,7 +183,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Added Test Suites&#10;Added multiple improvements" />
     <MESSAGE value="Updated example in README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated example in README.md" />
+    <MESSAGE value="Added GUI dialog removal fix to support github test runner" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added GUI dialog removal fix to support github test runner" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -171,26 +206,26 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="352" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834" timestamp="1588910415370" />
-    <state x="374" y="0" key="CommitChangelistDialog2" timestamp="1588912323287">
+    <state x="374" y="0" key="CommitChangelistDialog2" timestamp="1588913277120">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="374" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1588912323287" />
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1588911741473">
+    <state x="374" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1588913277120" />
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1588915242330">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1588911741473" />
-    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1588911741473">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1588915242330" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1588915242329">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1588911741473" />
-    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1588911741473">
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1588915242329" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1588915242329">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1588911741473" />
-    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1588911741473">
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1588915242329" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1588915242330">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1588911741473" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1588915242330" />
     <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1588903759476">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -207,17 +242,17 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1588903759476" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1588912331612">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1588913285084">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1588912331612" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1588913285084" />
     <state x="465" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1586866337033">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="465" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1586866337033" />
-    <state x="425" y="189" key="run.anything.popup" timestamp="1588909063048">
+    <state x="425" y="189" width="672" height="677" key="run.anything.popup" timestamp="1588913610937">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1588909063048" />
+    <state x="425" y="189" width="672" height="677" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1588913610937" />
   </component>
 </project>

@@ -1,5 +1,6 @@
 import ephraim.StaticJDispatcher;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 
@@ -12,8 +13,13 @@ public class TestUtility {
 
     public static void receiveDialogInputs() {
         String buf;
+        try {
+            System.out.println("Is available: " + System.in.available());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         Scanner scan = new Scanner(System.in);
-        while (true) {
+        while (scan.hasNextLine()) {
             System.out.println("Enter command with tag prefix. Eg: tag:command");
             buf = scan.nextLine();
             if (buf.startsWith("cmd:")) {
@@ -25,6 +31,5 @@ public class TestUtility {
                 StaticJDispatcher.getDispatcher().emit(NO_TAG_INPUT_SIGNAL, buf);
             }
         }
-        scan.close();
     }
 }

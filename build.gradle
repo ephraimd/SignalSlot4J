@@ -7,6 +7,7 @@ group 'ephraim'
 version '2.0'
 
 sourceCompatibility = 1.8
+mainClassName = 'ephraim.Main'
 
 repositories {
     mavenCentral()
