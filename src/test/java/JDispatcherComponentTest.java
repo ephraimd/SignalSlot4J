@@ -47,7 +47,6 @@ public class JDispatcherComponentTest {
 
     public void signalAvailabilityTest() {
         Assertions.assertTrue(StaticJDispatcher.getDispatcher().isSignalRegistered(TestUtility.CMD_INPUT_SIGNAL));
-        Assertions.assertTrue(StaticJDispatcher.getDispatcher().isSignalRegistered(TestUtility.DIALOG_INPUT_SIGNAL));
         Assertions.assertTrue(StaticJDispatcher.getDispatcher().isSignalRegistered(TestUtility.NO_TAG_INPUT_SIGNAL));
     }
 
@@ -66,7 +65,6 @@ class InputProcessor {
     public InputProcessor() {
         StaticJDispatcher.getDispatcher().addSlot(TestUtility.CMD_INPUT_SIGNAL, this::processCmdInput);
         StaticJDispatcher.getDispatcher().addSlot("noInput", System.out::println);
-        StaticJDispatcher.getDispatcher().addSlot(TestUtility.DIALOG_INPUT_SIGNAL, this::processDialogInput);
         StaticJDispatcher.getDispatcher().addSlot(TestUtility.NO_TAG_INPUT_SIGNAL, (args) -> processNoTagInput(String.valueOf(args[0])));
     }
 
@@ -78,7 +76,4 @@ class InputProcessor {
         System.out.println("Cmd Inputs received are: " + Arrays.toString(args));
     }
 
-    public void processDialogInput(Object... args) {
-        System.out.println("Dialog Inputs received are: " + Arrays.toString(args));
-    }
 }
