@@ -19,7 +19,7 @@ public class MainTest {
             if(input.equals("quit")){
                 break;
             }else{
-                JSSDispatcher.getDispatcher().emit("gotInput()", input);
+                getJDispatcher().emit("gotInput()", input);
             }
         }
 
@@ -30,7 +30,7 @@ public class MainTest {
         WatchMan man = new WatchMan();
         King king = new King();
 
-        JSSDispatcher.getDispatcher().addSlot("gotInput()", args-> {
+        getJDispatcher().addSlot("gotInput()", args-> {
             String arg = args[0].toString();
             if(arg.startsWith("danger:")){
                 man.emit("danger()", arg.replace("danger:", ""));
@@ -45,11 +45,11 @@ public class MainTest {
 
 class Caller{
     public Caller(){
-        JSSDispatcher.getDispatcher().addSlot("gotInput()", args-> System.out.println("Global Message is: " + Arrays.toString(args)));
+        getJDispatcher().addSlot("gotInput()", args-> System.out.println("Global Message is: " + Arrays.toString(args)));
     }
 }
 
-class WatchMan extends Dispatcher{
+class WatchMan extends ephraim.JDispatcher{
     public WatchMan(){
         addSlot("danger()", args -> raiseAlarm(String.valueOf(args[0])));
         addSlot("calm()", args -> calmCity(String.valueOf(args[0])));
@@ -62,7 +62,7 @@ class WatchMan extends Dispatcher{
     }
 }
 
-class King extends Dispatcher{
+class King extends ephraim.JDispatcher{
     public King(){
         addSlot("danger()", args -> alarmRaised(String.valueOf(args[0])));
         addSlot("calm()", args -> cityCalmed(String.valueOf(args[0])));

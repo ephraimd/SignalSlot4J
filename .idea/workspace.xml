@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d207644-253b-4ac4-a7d1-a35ac56f90f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/SignalSlot4J.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ephraim/StaticJDispatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/JDispatcherComponentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/JDispatcherImplementationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ephraim/JDispatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JSSDispatcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Slot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ephraim/Slot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MainTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,12 +42,12 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -44,6 +58,44 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="JDispatcherComponentTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;JDispatcherComponentTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="JDispatcherImplementationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;JDispatcherImplementationTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="SignalSlot4J [fatJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -67,6 +119,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.SignalSlot4J [fatJar]" />
+        <item itemvalue="Gradle.JDispatcherImplementationTest" />
+        <item itemvalue="Gradle.JDispatcherComponentTest" />
         <item itemvalue="Application.MainTest" />
       </list>
     </recent_temporary>
@@ -85,25 +139,61 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1586812023540">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1588856901000">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1586812023540" />
-    <state width="1493" height="214" key="GridCell.Tab.0.bottom" timestamp="1586819960633">
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.834@0.0.1536.834" timestamp="1588856901000" />
+    <state x="93" y="93" width="1350" height="648" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1588909524915">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="214" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1586819960633" />
-    <state width="1493" height="214" key="GridCell.Tab.0.center" timestamp="1586819960631">
+    <state x="93" y="93" width="1350" height="648" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.834@0.0.1536.834" timestamp="1588909524915" />
+    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1588863921281">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="214" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1586819960631" />
-    <state width="1493" height="214" key="GridCell.Tab.0.left" timestamp="1586819960630">
+    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1588863921281" />
+    <state x="352" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588910415370">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="214" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1586819960630" />
-    <state width="1493" height="214" key="GridCell.Tab.0.right" timestamp="1586819960632">
+    <state x="352" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834" timestamp="1588910415370" />
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1588911252215">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="214" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1586819960632" />
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1588911252215" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1588911252215">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1588911252215" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1588911252215">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1588911252215" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1588911252215">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1588911252215" />
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1588903759476">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1588903759476" />
+    <state width="1493" height="265" key="GridCell.Tab.1.center" timestamp="1588903759476">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1588903759476" />
+    <state width="1493" height="265" key="GridCell.Tab.1.left" timestamp="1588903759476">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1588903759476" />
+    <state width="1493" height="265" key="GridCell.Tab.1.right" timestamp="1588903759476">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1588903759476" />
+    <state x="465" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1586866337033">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="465" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1586866337033" />
+    <state x="425" y="189" key="run.anything.popup" timestamp="1588909063048">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1588909063048" />
   </component>
 </project>

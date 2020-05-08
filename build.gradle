@@ -14,14 +14,18 @@ repositories {
 task fatJar(type: Jar) {
     manifest {
         attributes 'Implementation-Title': 'SignalSlot4J',
-                'Implementation-Version': version,
-                'Main-Class': 'revstar.googlebot.Googlebot'
+                'Implementation-Version': version
     }
     baseName = 'SignalSlot4J'
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
     with jar
 }
 
+test {
+    useJUnitPlatform()
+}
+
 dependencies {
-    //testCompile group: 'junit', name: 'junit', version: '4.12'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.+'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.+'
 }
