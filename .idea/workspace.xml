@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d207644-253b-4ac4-a7d1-a35ac56f90f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ephraim/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ephraim/JDispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ephraim/JDispatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestUtility.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +45,7 @@
       <command value="gradle clean build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.JDispatcherImplementationTest">
+  <component name="RunManager" selected="Gradle.SignalSlot4J [clean build]">
     <configuration name="TestUtility" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TestUtility" />
       <module name="SignalSlot4J.test" />
@@ -134,10 +132,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SignalSlot4J [clean build]" />
         <item itemvalue="Gradle.JDispatcherImplementationTest" />
         <item itemvalue="Gradle.JDispatcherComponentTest" />
         <item itemvalue="Application.TestUtility" />
-        <item itemvalue="Gradle.SignalSlot4J [clean build]" />
         <item itemvalue="Gradle.SignalSlot4J [fatJar]" />
       </list>
     </recent_temporary>
@@ -174,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588913278231</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added temporary fix to Scanner issues in the Test Suites">
+      <created>1588915455681</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588915455681</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -184,7 +189,8 @@
     <MESSAGE value="Added Test Suites&#10;Added multiple improvements" />
     <MESSAGE value="Updated example in README.md" />
     <MESSAGE value="Added GUI dialog removal fix to support github test runner" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added GUI dialog removal fix to support github test runner" />
+    <MESSAGE value="Added temporary fix to Scanner issues in the Test Suites" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added temporary fix to Scanner issues in the Test Suites" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -206,26 +212,26 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="352" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834" timestamp="1588910415370" />
-    <state x="374" y="0" key="CommitChangelistDialog2" timestamp="1588913277120">
+    <state x="374" y="0" key="CommitChangelistDialog2" timestamp="1588915453364">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="374" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1588913277120" />
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1588915242330">
+    <state x="374" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1588915453364" />
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1588916331722">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1588915242330" />
-    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1588915242329">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1588916331722" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1588916331721">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1588915242329" />
-    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1588915242329">
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1588916331721" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1588916331721">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1588915242329" />
-    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1588915242330">
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1588916331721" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1588916331722">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1588915242330" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1588916331722" />
     <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1588903759476">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -242,10 +248,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1588903759476" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1588913285084">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1588915463755">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1588913285084" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1588915463755" />
     <state x="465" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1586866337033">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

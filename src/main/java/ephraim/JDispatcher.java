@@ -3,7 +3,9 @@ package ephraim;
 import java.util.HashMap;
 
 /**
- * {@link JDispatcher} object is basically the emitter of events and has the corresponding slots attached to it
+ * {@link JDispatcher} object is basically the emitter of events and has the corresponding slots attached to it.
+ * One issue with events systems is that we end up with a lot of useless slots, but in this case,
+ * slots are attached to JDispatcher class instance, once the instance is no longer in used, the GC destroys it all.
  */
 public abstract class JDispatcher {
     /**
@@ -21,7 +23,7 @@ public abstract class JDispatcher {
      * @param signalID Unique signalID string as keys for each {@link Slot}
      * @return boolean {@code true} if signalID is registered with a slot connected, return false otherwise
      */
-    public boolean isSignalRegistered(String signalID) {
+    public boolean isSignalRegistered(final String signalID) {
         return connections.containsKey(signalID);
     }
 
@@ -30,7 +32,7 @@ public abstract class JDispatcher {
      *
      * @param signalID the signalID we wish to remove. This will remove the associated slot object
      */
-    public void disconnect(String signalID) {
+    public void disconnect(final String signalID) {
         if (!connections.containsKey(signalID))
             throw new IllegalArgumentException(String.format("No signal ID %s exists", signalID));
         connections.remove(signalID);
@@ -44,7 +46,7 @@ public abstract class JDispatcher {
      * @param signalID Unique signalID string as keys for each {@link Slot}
      * @param slot     The {@link Slot} object to be executed when {@link JDispatcher#emit(String, Object...)} is called with the corresponding signalID
      */
-    public void addSlot(String signalID, Slot slot) {
+    public void addSlot(final String signalID, final Slot slot) {
         if (!connections.containsKey(signalID)) {
             //if signal key has not been registered before, add it
             connections.put(signalID, new HashMap<>());
@@ -62,7 +64,7 @@ public abstract class JDispatcher {
      * @param signalID Unique signalID under which the desired slot to be executed is stored
      * @param slotArgs arrays of parameters to send to the ephraim.Slot to be executed
      */
-    public void emit(String signalID, Object... slotArgs) {
+    public void emit(final String signalID, Object... slotArgs) {
         try {
             connections.get(signalID).forEach((Integer index, Slot slot) -> slot.exec(slotArgs));
         } catch (NullPointerException ex) {

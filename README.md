@@ -1,9 +1,17 @@
 # SignalSlot4J
-A pretty simple signal and slot events system.
+I love C++ QT's signal/slot system. Its the missing feature in my java codebase. So The Lord gave me this idea to build a similar system in Java.
+ 
+The concept of this library has been used in a structural analysis and modelling system with real-time interactive 2D interface and another filesystem watcher app.
+- [https://github.com/ephraimd/simon-suite-client][Simon Design Suite Client]
+- [https://github.com/ephraimd/WatchBoy][Watch Boy] 
+### The Idea
+The idea is to have a signal/slot event system as opposed to the traditional Timer based Event systems.
+With this small and simple library, you can emit signals, which contain any Object you want - across the entire java runtime of your application.
 
-The library can help connect different parts of an application with a loose mechanism that works like PyQt/C++ Qt's signal and slot system - with a little tweak to allow for more general purpose use.
+### Example
+I'm working really hard on making my repos look better with examples and some GIFs too. But i hope the examples provided below will be enough to explain the concept behind the library.
+- if you think you'll be interested in using this library, and you need more examples, kindly raise an issue, i'll follow-up promptly 
 
-Example?:
 ```java
 
 import ephraim.StaticJDispatcher;
@@ -91,3 +99,12 @@ class InputProcessor {
     }
 }
 ```
+
+### TODO
+- Add Test coverage
+- Setup Github CI for artifact deployment
+- Automatic removal of useless slots
+
+[Simon Design Suite Client]: https://github.com/ephraimd/simon-suite-client
+
+[Watch Boy]: https://github.com/ephraimd/simon-suite-client
